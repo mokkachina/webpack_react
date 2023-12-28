@@ -1,0 +1,16 @@
+header{
+    color: coral;
+    background-color: blue;
+    text-align: center;
+    font-size: 3rem;
+    hight: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .btn{
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px black;
+}
