@@ -7,8 +7,18 @@ module.exports = {
         path: path.join(__dirname,"/dist"),
         filename: "bundle.js"
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
+    },
     module: {
         rules: [
+            {
+                test: /\.ts|tsx$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "awesome-typescript-loader"
+                }
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,

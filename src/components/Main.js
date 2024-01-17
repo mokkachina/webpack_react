@@ -1,16 +1,17 @@
 import React, {Component} from "react";
+import Weather from "./Weather";
 
 
-class Main extends Component{
-    render() {
+function Main (){
+
         return(
             <main>
                 <div>
-                    <h1>Hello World</h1>
+                    <Weather/>
                 </div>
             </main>
 
         )
-    }
+
 }
 export default Main;
